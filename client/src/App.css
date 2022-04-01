@@ -1,0 +1,97 @@
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.heading {
+  text-align: center;
+  font-size: 20px;
+}
+
+.container {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+input {
+  padding-left: 5px;
+  font-size: 20px;
+  height: 36px;
+}
+
+.middle, .right {
+  width: 120px;
+}
+
+.switch {
+  padding: 5px;
+  margin: 58px 10px 0;
+  background-color: rgb(226, 252, 184);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.result {
+  margin-top: 25px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  border: 2px solid forestgreen;
+  background-color: rgb(226, 252, 184);
+  cursor: pointer;
+}
+
+p, h3, button, .switch {
+  text-align: center;
+  color: forestgreen;
+}
+
+p {
+  font-size: 25px;
+}
+
+.slow-loading-section {
+  flex-wrap: wrap;
+}
+
+.switch-status {
+  font-weight: 600;
+}
+
+.switch-off {
+  color: red;
+}
+
+@media (max-width: 290px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  p, span, h3 {
+    font-size: 17px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  .switch {
+    margin: 1em 10px 0;
+  }
+  input {
+    font-size: 17px;
+    width: 200px;
+  }
+  input::placeholder {
+    font-size: 17px;
+  }
+}
